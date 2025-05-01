@@ -10,9 +10,10 @@
 #'
 #' @export
 dotplotcolor <- function(datainput){
+  # z value with current data input
   z =(datainput -mean(datainput))/sd(datainput)
 
-  mycol = ifelse(abs(z)>3, "Red",
-          ifelse(abs(z)>=2 &abs(z)<=3,"Blue", "Black"))
+  mycol = ifelse(abs(z)>3, "Red", # this will outlier because z wait to far from org
+          ifelse(abs(z)>=2 &abs(z)<=3,"Blue", "Black")) # possible outliers # the ohter point is normal
  dotplot(datainput,col = mycol)
 }

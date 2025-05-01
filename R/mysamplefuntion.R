@@ -7,15 +7,16 @@
 #' @export
 myf=function(n, iter=10,time=0.5){
   for( i in 1:iter){
-    #loonig sample to fully randomize
     s=sample(1:10,n,replace=TRUE)
+    # factor will will random sample and code a vector
     sf=factor(s,levels=1:10)
-    # barplot
+    #create bar plot
     barplot(table(sf)/n,beside=TRUE,col=rainbow(10),
+            # graph pasting the label
             main=paste("Example sample()", " iteration ", i, " n= ", n,sep="") ,
+            # set y bar
             ylim=c(0,0.2)
     )
-    # timing
     Sys.sleep(time)
   }
 }
