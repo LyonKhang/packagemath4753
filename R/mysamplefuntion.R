@@ -17,6 +17,7 @@ myf=function(n, iter=10,time=0.5){
             # set y bar
             ylim=c(0,0.2)
     )
+    # this wait loop to make it works correctly
     Sys.sleep(time)
   }
 }

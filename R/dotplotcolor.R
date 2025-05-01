@@ -12,8 +12,9 @@
 dotplotcolor <- function(datainput){
   # z value with current data input
   z =(datainput -mean(datainput))/sd(datainput)
-
+  # this will use if else to fit two z condition
   mycol = ifelse(abs(z)>3, "Red", # this will outlier because z wait to far from org
           ifelse(abs(z)>=2 &abs(z)<=3,"Blue", "Black")) # possible outliers # the ohter point is normal
+  # dotplot
  dotplot(datainput,col = mycol)
 }
