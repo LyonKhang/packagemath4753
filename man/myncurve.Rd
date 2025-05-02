@@ -16,3 +16,4 @@ graph and area
 \description{
 create cruve with less than P(<=a)
 }
+\concept{curve}

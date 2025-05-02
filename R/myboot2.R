@@ -37,4 +37,7 @@ myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  # take input
   text(pte,max(para$density)/2,round(pte,2),cex=cx)
 
   invisible(list(ci=ci,fun=fun,x=x))# tem put omit the list, if needed can change to return the list
+  # example
+  # set.seed(1); test=rnorm(5,mean=4,sd=6)
+  # myboot2(iter=100, x=test, fun = "mean",alpha=0.5,col="blue",...)
 }

@@ -4,7 +4,6 @@
 #' @param time delay time between function executions
 #' @name myfunction
 #' @concept sampling
-#' @example
 #' @return barplot
 #'
 #' @export

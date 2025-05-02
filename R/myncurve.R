@@ -24,4 +24,6 @@ myncurve = function(mu, sigma,a){
   prob=round(prob,4)
   list(mu = mu, sigma = sigma,area=a) # list the result
   return(prob)
+  #example
+  # myncurve(mu=4,sigma=5,a=3)
 }
