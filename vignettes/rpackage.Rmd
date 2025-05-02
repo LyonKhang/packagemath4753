@@ -39,7 +39,7 @@ VINH4753SPR25::fire
 # this is an example indicate a red plot mean outliers
 dotplotcolor(c(1,2,3,4,5,6,7,8,9,1,1,11,12,18,-8,100))
 # this will indicate a blue  meaning possible ouliers
-dotplotcolor(c(0.000001,0.02,0.0123,0.01234,0.0235,0.0156,0.022,0.044))
+VINH4753SPR25::dotplotcolor(c(0.000001,0.02,0.0123,0.01234,0.0235,0.0156,0.022,0.044))
 
 ```
 
@@ -49,7 +49,7 @@ we denote that $\mu=10$ and $\sigma=12$. a is a user input region from 0 to y va
 
 ```{r}
 # lab 06
-myncurve(mu=10,sigma=12,a= 20)
+VINH4753SPR25::myncurve(mu=10,sigma=12,a= 20)
 
 ```
 
@@ -62,7 +62,7 @@ take input how many iterations, density num, calculate as mean, conf interval, e
 ```{r}
 set.seed(5); testing01=rnorm(10,mean=12,sd=8)
 # lab 10
-myboot2(iter=12500, x=testing01, fun = "mean",alpha=0.25,xlab="mean",col="tomato3")
+VINH4753SPR25::myboot2(iter=12500, x=testing01, fun = "mean",alpha=0.25,xlab="mean",col="tomato3")
 
 ```
 ## mysamplefunction
@@ -72,7 +72,7 @@ This functions is randomize sample
 
 ```{r}
 
-myf(123, iter = 8, time =0.75)
+VINH4753SPR25::myf(123, iter = 8, time =0.75)
 
 ```
 
