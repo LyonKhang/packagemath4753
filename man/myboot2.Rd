@@ -2,7 +2,7 @@
 % Please edit documentation in R/myboot2.R
 \name{myboot2}
 \alias{myboot2}
-\title{my Central Limit Function using runif, matrix, apply,creatin hist}
+\title{my Central Limit Function using runif, matrix, apply,creating hist}
 \usage{
 myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 }
@@ -20,5 +20,6 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 \item{...}{labaled stuff}
 }
 \description{
-my Central Limit Function using runif, matrix, apply,creatin hist
+my Central Limit Function using runif, matrix, apply,creating hist
 }
+\concept{centrallimit}

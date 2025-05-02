@@ -1,7 +1,10 @@
-#' Below is a code create bar plot of randomple sampling
+#' Below is a code create bar plot of random sampling
 #' @param n data
-#' @param iter iterations or looping varaiables
+#' @param iter iterations or looping variables
 #' @param time delay time between function executions
+#' @name myfunction
+#' @concept sampling
+#' @example
 #' @return barplot
 #'
 #' @export
@@ -20,4 +23,5 @@ myf=function(n, iter=10,time=0.5){
     # this wait loop to make it works correctly
     Sys.sleep(time)
   }
+  #mf(100,iter=8,time=1.6)
 }

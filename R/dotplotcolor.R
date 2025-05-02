@@ -1,7 +1,8 @@
 #' thi  step to create a dotlpot indicating dat distrbitbution with z
 #' @param datainput one set of data must be in number to work with
+#' @name dotplotcolor
 #' @return none because it will create a plot
-#'
+#' @concept dotplot
 #' @import lattice
 #'
 #' @importFrom lattice dotplot
@@ -17,4 +18,5 @@ dotplotcolor <- function(datainput){
           ifelse(abs(z)>=2 &abs(z)<=3,"Blue", "Black")) # possible outliers # the ohter point is normal
   # dotplot
  dotplot(datainput,col = mycol)
+ # dotplotcolor(c(1,2,3,4,5,6,7,8,9))
 }

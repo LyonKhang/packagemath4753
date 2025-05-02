@@ -15,3 +15,4 @@ none because it will create a plot
 \description{
 thi  step to create a dotlpot indicating dat distrbitbution with z
 }
+\concept{dotplot}
